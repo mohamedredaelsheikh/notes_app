@@ -7,22 +7,25 @@ class CustomButtom extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {},
-      child: Container(
-        decoration: BoxDecoration(
-          color: kprimaryColor,
-          borderRadius: BorderRadius.circular(8),
-        ),
-        width: MediaQuery.of(context).size.width,
-        height: 55,
-        child: Center(
-          child: Text(
-            buttomname,
-            style: const TextStyle(
-              color: Colors.black,
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 16),
+      child: GestureDetector(
+        onTap: () {},
+        child: Container(
+          decoration: BoxDecoration(
+            color: kprimaryColor,
+            borderRadius: BorderRadius.circular(8),
+          ),
+          width: MediaQuery.of(context).size.width,
+          height: 55,
+          child: Center(
+            child: Text(
+              buttomname,
+              style: const TextStyle(
+                color: Colors.black,
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ),
         ),
