@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:note_app/constant.dart';
 
 class CustomButtom extends StatelessWidget {
-  const CustomButtom({super.key, required this.buttomname});
+  const CustomButtom({super.key, required this.buttomname, this.onTap});
   final String buttomname;
-
+  final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 16),
       child: GestureDetector(
-        onTap: () {},
+        onTap: onTap,
         child: Container(
           decoration: BoxDecoration(
             color: kprimaryColor,
