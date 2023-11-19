@@ -54,7 +54,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
                     var notemodal = NoteModel(
                       title: title!,
                       content: content!,
-                      date: DateFormat('yyyy-MM-dd – kk:mm')
+                      date: DateFormat('yyyy/MM/dd kk:mm')
                           .format(currentdate)
                           .toString(),
                       color: Colors.blue.value,
